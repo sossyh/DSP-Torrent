@@ -22,5 +22,10 @@ Group Members:
 - peer.go - used to fill it's bitfield ,read ,write and copyingpieces.
 - handShake.go - we should check from the other peers  can communicate using the BitTorrent protocol,
 is able to understand and respond to our messages,and 
-has the file that we want, or at least knows what we’re talking about
+has the file that we want, or at least knows what we’re talking about.
+- tracker.go - Now that we have a list of peers, it’s time to connect with them and start downloading pieces! We can break down the process into a few steps. For each peer, we want to:
+
+                                                                             Start a TCP connection with the peer. This is like starting phone call.
+Complete a two-way BitTorrent handshake. “Hello?” “Hello."
+Exchange messages to download pieces. “I’d like piece #231 pleas
 
