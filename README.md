@@ -9,24 +9,13 @@ Group Members:
 - Tseganesh Yifru
 - Ekram Kedir
 
-                                                      **Project Description
-                                                      <br/>
-                                                               Bencode
 
--is a format in which the torrent file is written.To get useful parameters that can be used by the trackers and the other peers we need to apply different operations like parsing and marshaling.So under the bencode folder we have added he implementation for the parser and marshal and he corrponding test files for them.
-<br/>Parser.go - This file implements functionalities that are needed by the parser such as gettin the important informations from the .torrent file.After                                parsing the whole file , we can spot the URL of the tracker, the creation date (as a Unix timestamp), the name and size of the file, and a                                big binary blob containing the SHA-1 hashes of each piece, which are equally-sized parts of the file we want to download. The exact size of                              a piece varies between torrents, but they are usually somewhere between 256KB and 1MB. This means that a large file might be made up of                                  thousands of pieces. We’ll download these pieces from our peers, together, and boom, we’ve got a file!        
-# Paste Markdown objects
-
-- Paste spreadsheet cells and HTML tables as a Markdown tables.
-- Paste URLs on selected text as Markdown links.
-- Paste text containing links as text containing Markdown links.
-- Paste image URLs as Markdown image links.
-- Paste markdown as markdown. See [`@github/quote-selection`/Preserving markdown syntax](https://github.com/github/quote-selection/tree/9ae5f88f5bc3021f51d2dc9981eca83ce7cfe04f#preserving-markdown-syntax) for details.
-
-## Installation
+# Project Description
+##   Bencode
 
 ```
-$ npm install @github/paste-markdown
+is a format in which the torrent file is written.To get useful parameters that can be used by the trackers and the other peers we need to apply different operations like parsing and marshaling.So under the bencode folder we have added he implementation for the parser and marshal and he corrponding test files for them.
+- Parser.go - This file implements functionalities that are needed by the parser such as gettin the important informations from the .torrent file.After                                parsing the whole file , we can spot the URL of the tracker, the creation date (as a Unix timestamp), the name and size of the file, and a                                big binary blob containing the SHA-1 hashes of each piece, which are equally-sized parts of the file we want to download. The exact size of                              a piece varies between torrents, but they are usually somewhere between 256KB and 1MB. This means that a large file might be made up of                                  thousands of pieces. We’ll download these pieces from our peers, together, and boom, we’ve got a file!
 ```
 
 ## Usage
