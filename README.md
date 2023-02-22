@@ -24,8 +24,11 @@ Group Members:
 is able to understand and respond to our messages,and 
 has the file that we want, or at least knows what we’re talking about.
 - tracker.go - Now that we have a list of peers, it’s time to connect with them and start downloading pieces! We can break down the process into a few steps. For each peer, we want to:
-
-                                                                             Start a TCP connection with the peer. This is like starting phone call.
+Start a TCP connection with the peer. This is like starting phone call.
 Complete a two-way BitTorrent handshake. “Hello?” “Hello."
-Exchange messages to download pieces. “I’d like piece #231 pleas
+Exchange messages to download pieces. “I’d like piece #444 please
+download.go .
+- peer.go - This implements the peer it self and he fuctions that it use for communicating and sending for the other peers.Once we’ve completed the initial handshake, we can send and receive messages. Well, not quite—if the other peer isn’t ready to accept messages, we can’t send any until they tell us they’re ready. In this state, we’re considered choked by the other peer. They’ll send us an unchoke message to let us know that we can begin asking them for data. By default, we assume that we’re choked until proven otherwise.
+Once we’ve been unchoked, we can then begin sending requests for pieces, and they can send us messages back containing pieces.
+
 
