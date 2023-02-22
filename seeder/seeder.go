@@ -10,7 +10,7 @@ import (
 	"os"
 	"torrent/handshake"
 	"torrent/message"
-	"torrent/torrentfile"
+	"torrent/torrent_file"
 )
 
 type Request struct {
