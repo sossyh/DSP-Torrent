@@ -30,5 +30,15 @@ Exchange messages to download pieces. “I’d like piece #444 please
 download.go .
 - peer.go - This implements the peer it self and he fuctions that it use for communicating and sending for the other peers.Once we’ve completed the initial handshake, we can send and receive messages. Well, not quite—if the other peer isn’t ready to accept messages, we can’t send any until they tell us they’re ready. In this state, we’re considered choked by the other peer. They’ll send us an unchoke message to let us know that we can begin asking them for data. By default, we assume that we’re choked until proven otherwise.
 Once we’ve been unchoked, we can then begin sending requests for pieces, and they can send us messages back containing pieces.
+bitfield.go - it uses fuctions that help the peer to keep track of the pieces that it can seed .
+
+# Running the project 
+## main.go 
+- In this file fuctions that implement structuring the data that is about to be sent to the tracker and download it.
+## command for running 
+'''
+cd cmd
+go run main.go ../testfile/debian-iso.torrent
+'''
 
 
