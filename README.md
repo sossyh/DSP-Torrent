@@ -36,13 +36,8 @@ bitfield.go - it uses fuctions that help the peer to keep track of the pieces th
 ## main.go 
 - In this file fuctions that implement structuring the data that is about to be sent to the tracker and download it.
 ## command for running 
-Usage
-import {subscribe} from '@github/paste-markdown'
-
-// Subscribe the behavior to the textarea.
-subscribe(document.querySelector('textarea[data-paste-markdown]'))
-Using a library like selector-observer, the behavior can automatically be applied to any element matching a selector.
-
-import {observe} from 'selector-observer'
-
+```
+- cd cmd 
+- go run main.go ../testfile/debian-iso.torrent
+```
 
