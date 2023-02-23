@@ -16,7 +16,7 @@ var (
 )
 
 type BType uint8
-
+// contains 
 const (
 	BSTR  BType = 0x01
 	BINT  BType = 0x02
